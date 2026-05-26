@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/tvStageName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvStageDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#666"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvWordCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="#888"
+        android:layout_marginBottom="12dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnLearn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="📖 开始学习"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="📝 测验"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/white" />
+
+</LinearLayout>

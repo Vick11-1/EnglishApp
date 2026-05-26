@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="复习 1/10"
+        android:textSize="14sp"
+        android:textColor="#888"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/tvEnglish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvPhonetic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#888"
+                android:layout_marginBottom="24dp" />
+
+            <LinearLayout
+                android:id="@+id/answerArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvChinese"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:textColor="#4CAF50"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:id="@+id/tvMnemonic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#FF9800"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvComplete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnFlip"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="查看答案"
+        android:textSize="16sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAgain"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="😵 忘了"
+            android:textSize="12sp"
+            android:backgroundTint="#F44336"
+            android:textColor="@color/white"
+            android:layout_marginEnd="2dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnHard"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="😓 困难"
+            android:textSize="12sp"
+            android:backgroundTint="#FF9800"
+            android:textColor="@color/white"
+            android:layout_marginEnd="2dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnGood"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="😊 记得"
+            android:textSize="12sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@color/white"
+            android:layout_marginEnd="2dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnEasy"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="😎 简单"
+            android:textSize="12sp"
+            android:backgroundTint="#2196F3"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
